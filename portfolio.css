@@ -1,31 +1,125 @@
-.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
 
-li.topnav {
-    float: left;
-}
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
 
-li.topnav a {
-  display: block;
+.PartOne {
+  height: 800px;
+  background:
+   linear-gradient(
+     rgba(0,0,0,0.35),
+     rgba(0,0,0,0.35)
+     ),
+   url(Background.jpeg);
+  background-size: cover;
   color: white;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
 
-li.topnav a:hover {
-    background-color: #111;
+.PartTwo {
+  padding-top: 100px;
+  height: 500px;
 }
 
-h1 {
+footer {
+    padding: 80px 0 50px;
+    background-color: #252a30;
+    color: #fff;
+    text-align: center
+}
+
+p {
+  color: #989998;
+}
+
+.SeeIt {
+  font-family: 'Roboto', sans-serif;
+  color: #C3C4C3;
+}
+
+.SeeIt:hover {
+  color: #DDDEDC;
+}
+
+p.SeeIt {
+  color: #C3C4C3;
+  padding-top: 200px;
+}
+
+#WelcomeSentence {
+  font-size: 75px;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
+  padding-top: 100px;
+  padding-bottom: 30px;
 }
+
+#Availability {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin: auto;
+  border-radius: 30px;
+  text-align: center;
+  border: solid;
+  border-color: #FED717;
+  width: 250px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.MainSubHeading {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 10px;
+}
+
+.SubSubHeading {
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.ThreeColumns {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  color: #FED717;
+}
+
+#DragonSlaying {
+  text-align: center;
+     padding-top: 30px;
+   padding-left: 20px;
+ padding-right: 20px;
+     padding-bottom: 30px;
+}
+
+#ComputerProgramming {
+  text-align: center;
+     padding-top: 30px;
+   padding-left: 85px;
+ padding-right: 20px;
+     padding-bottom: 30px;
+}
+
+#GuitarShredding {
+  text-align: center;
+     padding-top: 30px;
+   padding-left: 20px;
+ padding-right: 20px;
+     padding-bottom: 30px;
+}
+
+
 
 img.mahself {
   display: block;
@@ -36,16 +130,4 @@ img.mahself {
   width: 600px;
   border-style: solid;
 
-}
-
-section {
- display: flex;
-}
-
-aside {
- flex: 1
-}
-
-article {
- flex: 4
 }

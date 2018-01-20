@@ -1,27 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <style>
+  a{text-decoration: none}
+  </style>
+  <script src="https://use.fontawesome.com/1133bce58c.js"></script>
+  <script>
+  $(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+  </script>
   <link rel="stylesheet" href="portfolio.css">
   <title>Seth Barton's Website</title>
 </head>
 <body>
-  <ul class="topnav">
-  <li class="topnav"><a href="index.html">Home</a></li>
-  <li class="topnav"><a href="experience.html">Experience</a></li>
-  <li class="topnav"><a href="projects.html">Projects</a></li>
-  <li class="topnav"><a href="contact.html">Contact</a></li>
-</ul>
-<section>
-<article>
-  <h1> Seth Barton: The Website </h1>
-  <img class=mahself src="The Mormon DJ.jpg" alt="Me, mixing some dope tracks.">
-</article>
-<aside>
-  <h2>About me: </h2>
-    <p> I'm from Mesa Arizona, the youngest of four children, and one lucky son of a gun.</p>
-</aside>
-</section>
+
+<div class="PartOne">
+  <h1 id="WelcomeSentence"> Hi, I'm Seth.
+    I design & build <br /> websites. </h1>
+
+    <h3 id="Availability"> Yes, I'm available for hire. </h3>
+
+<div id="Scroller">
+    <a href="#p2">
+    <div class=SeeIt>
+      <p class="SeeIt"> See what I'm all about </p>
+      <i class="fa fa-chevron-down" aria-hidden="true" style="padding-top:10px"></i>
+    </div>
+  </a>
+</div>
+</div>
+
+<div class="PartTwo" id="p2">
+  <h3 class="MainSubHeading"> My Expertise </h3>
+  <p class="SubSubHeading"> Rest assured, I've got all the skillz you need. </p>
+  <div class="ThreeColumns">
+    <article id="DragonSlaying">
+      <i class="fa fa-shield fa-4x" aria-hidden="true"></i>
+    <h3 style="color:black; padding-top:35px; padding-bottom: 10px"> Dragon Slaying </h3>
+        <p> I spent six years learning the art of using the latest and greates anti-dragon technology. Don't worry - I've got all our bases covered on this point. Need a sword? Check. How about a spell? Check. I've even got dragon traps. Triple check. </p>
+    </article>
+    <article id="ComputerProgramming">
+    <i class="fa fa-code fa-4x" aria-hidden="true"></i>
+    <h3 style="color:black; padding-top:35px; padding-bottom: 10px"> Computer Programming </h3>
+      <p> I've got so much compuer knowedge it's coming out my ears. In fact, sometimes I can't open my mouth without it flying all over the place. I once spent seven months in Russia learning the secrets of Tai-Kwon Hacking. Rest assured, nobody's gonna be getting your info.</p>
+    </article>
+
+    <article id="GuitarShredding">
+      <i class="fa fa-music fa-4x" aria-hidden="true"></i>
+    <h3 style="color:black; padding-top:35px; padding-bottom: 10px"> Guitar Shredding </h3>
+      <p> I've been playing guitar since I was a wee lad. I know my tone like the back of my hand. PRS Custom 24, Peavey amp, full fledged pedal board, and loads of amplitude. I can rock and party. Did I mention that I'm a DJ too? Sometimes I can't decide how loud to be so I have to do both.</p>
+    </article>
+  </div>
+</div>
+
 </body>
 <footer>
+  &copy Seth Barton 2018
 </footer>
 </html>
