@@ -2,9 +2,6 @@
 <html>
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <style>
-  a{text-decoration: none}
-  </style>
   <script src="https://use.fontawesome.com/1133bce58c.js"></script>
   <script>
   $(document).on('click', 'a[href^="#"]', function (event) {
@@ -24,7 +21,9 @@
   <h1 id="WelcomeSentence"> Hi, I'm Seth.
     I design & build <br /> websites. </h1>
 
-    <h3 id="Availability"> Yes, I'm available for hire. </h3>
+
+    <h3  class="hvr-radial-out hvr-ripple-out" id="Availability"><a href="#"> Yes, I'm available for hire. </a></h3>
+
 
 <div id="Scroller">
     <a href="#p2">
@@ -59,8 +58,25 @@
   </div>
 </div>
 
+<div class="WorkTogether">
+  <h3 id="HangOut"> Let's hang out! </h3>
+  <p id="Invite"> I'm always looking for more friends, programming projects, music projects, DJ gigs, or what have you. Let me know! </p>
+  <h3  class="hvr-radial-out2 hvr-ripple-out2" id="DoThis"><a href="#"> Let's Do This! </a></h3>
+</div>
+
+
 </body>
 <footer>
+<div id="DisclosureNote">
   Note! This Design of this Website is not my own. This website serves no purpose in getting me money or getting me hired. I was merely using an exisiting design from http://mattfarley.ca in order to practice my own programming skills. Full credit fo the design of this site goes to him - I was merely a replicator trying to be as good as he is and learning some tricks with CSS and HTML.
+</div>
+<div id="IconLinks">
+  <a href="https://www.facebook.com/seth.barton2"
+  <i class="fa fa-instagram fa-2x" id="FacebookLink" aria-hidden="true"></i>
+</a>
+<a href="https://github.com/sethwbarton">
+  <i class="fa fa-github fa-2x" id="GitLink" aria-hidden="true"></i>
+</a>
+</div>
 </footer>
 </html>
